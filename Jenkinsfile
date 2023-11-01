@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                sh "echo 'Hello Pull'"
+                sh 'docker pull muzzamil-playwright-tests:1.0 '
             }
         }
         stage('Run') {
             steps {
-                 sh "echo 'Hello Run'"
+                sh 'docker run 51ce99675381'
             }
         }
     }
